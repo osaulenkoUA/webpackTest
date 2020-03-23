@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  background-color: bisque;
+  color: blue;
+  font-size: 20px;
+  /* transform: translate(50%); */
+  overflow: hidden;
+  background: linear-gradient(to bottom, white, black);
+}
+div {
+  color: black;
+}

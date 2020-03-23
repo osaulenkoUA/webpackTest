@@ -1,0 +1,11 @@
+import c from './test.js';
+import arrow from './arrow.js';
+import './style.css';
+import qwe from './a.hbs';
+console.log(`import from another file c=${c}`);
+console.log(arrow(522, 12));
+console.log('gfnjkrghdsij');
+const a = qwe();
+const section = document.querySelector('.a1');
+section.insertAdjacentHTML('beforeend', a);
+console.log(qwe());
