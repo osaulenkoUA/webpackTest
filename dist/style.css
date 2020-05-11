@@ -1,13 +1,57 @@
 body {
-  display: grid;
   background-color: bisque;
   color: blue;
-  font-size: 20px;
-  /* transform: translate(50%); */
-  overflow: hidden;
-  background: linear-gradient(to bottom, white, black);
 }
-div {
+
+.form {
+  box-sizing: border-box;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, -webkit-max-content);
+  grid-template-columns: repeat(4, max-content);
+  grid-row-gap: 10px;
+  grid-column-gap: 2px;
+  margin-left: 50px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 50px;
+  justify-self: end;
+  font-size: 30px;
+  text-align: center;
+}
+::-webkit-input-placeholder {
+  font-size: 16px;
+  opacity: 0.2;
+}
+::-moz-placeholder {
+  font-size: 16px;
+  opacity: 0.2;
+}
+:-ms-input-placeholder {
+  font-size: 16px;
+  opacity: 0.2;
+}
+::-ms-input-placeholder {
+  font-size: 16px;
+  opacity: 0.2;
+}
+::placeholder {
+  font-size: 16px;
+  opacity: 0.2;
+}
+.form__label {
+  color: black;
+  margin-left: 10px;
+  justify-self: end;
+}
+.btn {
+  grid-column: 1/5;
+}
+.list-zakaz {
+  list-style-type: square;
+  font-size: 20px;
   color: black;
 }
 
